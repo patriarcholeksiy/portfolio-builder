@@ -17,7 +17,6 @@ const createInitialState = () => {
     blocks,
     selectedId: blocks[0]?.id ?? null,
     preview: false,
-    exportOpen: false,
     integrations: {
       github: {
         username: 'torvalds',
@@ -114,13 +113,7 @@ export class App {
         this.updateState((state) => ({ ...state, preview: !state.preview }))
         break
       case 'export-html':
-        this.updateState((state) => ({ ...state, exportOpen: true }))
-        break
-      case 'download-html':
         this.downloadHtml()
-        break
-      case 'close-export':
-        this.updateState((state) => ({ ...state, exportOpen: false }))
         break
       case 'reset':
         this.store.setState(createInitialState())
@@ -418,7 +411,6 @@ export class App {
   }
 
   template(state) {
-    const exportHtml = escapeHtml(this.buildExportHtml(state))
     return `
 <div class="builder">
   <header class="builder__header">
@@ -498,22 +490,6 @@ export class App {
   <footer class="builder__footer">
     <div class="builder__footer-note">Поставте 5🫩</div>
   </footer>
-</div>
-
-<div class="modal ${state.exportOpen ? 'modal--open' : ''}" role="dialog" aria-modal="true" aria-hidden="${
-      state.exportOpen ? 'false' : 'true'
-    }">
-  <div class="modal__overlay" data-action="close-export"></div>
-  <div class="modal__content">
-    <div class="modal__header">
-      <h3 class="modal__title">Экспорт HTML</h3>
-      <div class="button-row">
-        <button class="button button--primary" data-action="download-html">Скачать HTML</button>
-        <button class="button button--ghost" data-action="close-export">Закрыть</button>
-      </div>
-    </div>
-    <pre class="code-block">${exportHtml}</pre>
-  </div>
 </div>
     `
   }

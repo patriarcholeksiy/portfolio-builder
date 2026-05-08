@@ -1,0 +1,9 @@
+.code-block {
+  background: var(--surface-alt);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+

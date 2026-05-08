@@ -1,0 +1,25 @@
+.main__meta {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.main__title {
+  font-size: 36px;
+}
+
+.main__role {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.main__summary {
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+@media (max-width: 640px) {
+  .main__title {
+    font-size: 28px;
+  }
+}
+

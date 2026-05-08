@@ -1,0 +1,9 @@
+.brand__title {
+  font-size: 20px;
+}
+
+.brand__subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+

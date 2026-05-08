@@ -1,0 +1,31 @@
+.timeline {
+  display: grid;
+  gap: 8px;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.timeline__item--active {
+  background: var(--accent-weak);
+  border-color: var(--accent);
+}
+
+.timeline__index {
+  height: 28px;
+  width: 28px;
+  border-radius: 8px;
+  background: var(--surface-alt);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+

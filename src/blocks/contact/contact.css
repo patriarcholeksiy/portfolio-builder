@@ -1,0 +1,6 @@
+.contact__grid {
+  display: grid;
+  gap: 8px;
+  color: var(--text-muted);
+}
+

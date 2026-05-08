@@ -1,0 +1,32 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+  background: var(--surface-alt);
+}
+
+.button--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.button--ghost {
+  background: transparent;
+  border-color: var(--border);
+}
+
+.button--danger {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.button--icon {
+  padding: 4px 8px;
+  border-radius: 8px;
+  border-color: var(--border);
+  background: var(--surface-alt);
+}
+

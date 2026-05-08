@@ -1,0 +1,24 @@
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  background: var(--surface-alt);
+  display: grid;
+  gap: 6px;
+}
+
+.project-card__title {
+  font-weight: 600;
+}
+
+.project-card__description {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.project-card__link {
+  color: var(--accent);
+  font-size: 13px;
+  text-decoration: none;
+}
+

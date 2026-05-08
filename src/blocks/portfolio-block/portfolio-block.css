@@ -1,0 +1,25 @@
+.portfolio-block {
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  display: grid;
+  gap: 12px;
+  position: relative;
+}
+
+.portfolio-block--active {
+  border-color: var(--accent);
+}
+
+.portfolio-block__toolbar {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.portfolio-block__content {
+  display: grid;
+  gap: 12px;
+}
+

@@ -1,0 +1,42 @@
+.canvas {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.canvas__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.canvas__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.canvas__subtitle {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.canvas__viewport {
+  display: grid;
+  gap: 16px;
+}
+
+.canvas--preview .portfolio-block__toolbar {
+  display: none;
+}
+
+.canvas--preview .portfolio-block {
+  border-style: solid;
+  border-color: transparent;
+}
+

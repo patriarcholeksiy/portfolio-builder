@@ -1,0 +1,25 @@
+.block-card {
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--surface-alt);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.block-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.12);
+}
+
+.block-card__title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.block-card__description {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+

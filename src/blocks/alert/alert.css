@@ -1,0 +1,8 @@
+.alert {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--danger);
+  font-size: 13px;
+}
+
